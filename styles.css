@@ -1,0 +1,223 @@
+:root {
+    --color-primario: #0D47A1;
+    --color-secundario: #B0BEC5;
+    --color-acento1: #FF6F00;
+    --color-acento2: #64DD17;
+    --color-fondo: #121212;
+    --color-texto: #F5F5F5;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Oswald", sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .logo-header {
+    width: 15%;
+  }
+  nav {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    border: 3px solid #444;
+  }
+  
+  nav a {
+    color: #dadada;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+  }
+  
+  .hero {
+    padding: 2rem;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1581090700227-1e8c9a5053e7');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .cta-button {
+    background-color: var(--color-acento1);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: 3px solid #444;
+  }
+  #video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5; /* puedes ajustar esto para más o menos visibilidad */
+  }
+#menu-toggle {
+  display: none;
+  background: none;
+  font-size: 2rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#nav-links.visible {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    padding: 1rem;
+  }
+
+  #nav-links li {
+    margin: 0.5rem 0;
+  }
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 1rem;
+}
+
+#form-status {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.carousel-container {
+  position: relative;
+  width: 90%;
+  max-width: 960px;
+  margin: 2em auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel-item {
+  min-width: 300px;
+  margin: 0 10px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #222;
+  color: white;
+  border: none;
+  font-size: 2em;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-container button:hover {
+  background-color: #444;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+#servicios {
+  padding: 2rem;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1581090700227-1e8c9a5053e7');
+  background-size: cover;
+  background-position: center;
+}
+
+#servicios h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  margin-bottom: 1rem;
+}
+  
+#servicios p {
+  max-width: 850px;
+  margin: auto;
+}
+#personaliza h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  margin-bottom: 1rem;
+}
+#personaliza p {
+  max-width: 850px;
+  margin: auto;
+}

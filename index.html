@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstroDroid</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+  <!-- Intro Star Wars -->
+  <div id="intro-container">
+    <section class="intro">
+      A long time ago, in a galaxy far,<br> far away....
+    </section>
+
+    <section class="logo">
+      <!-- Logo -->
+      <img src="logo.png" alt="Logo AstroDroid">
+    </section>
+
+    <div id="board">
+      <div id="content">
+        <p id="title">Proyecto Final</p>
+        <p id="subtitle">ASTRODROID</p>
+        <br>
+        <p>Un bastión de innovación, se alza como líder en la creación y modificación de droides únicos para cada rincón del universo. Fundado por visionarios apasionados por la ingeniería y el diseño galáctico, este proyecto une creatividad, funcionalidad y estilo en cada unidad.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sitio AstroDroid Forge -->
+  <div id="main-content" style="display: none;">
+    <video autoplay muted loop id="video-fondo">
+      <source src="hyperspace.mp4" type="video/mp4">
+    </video>
+
+    <header>
+      <h1><img src="logo2.png" alt="AstroDroid Logo" class="logo-header"></h1>
+      <p>Un buen compañero no siempre debe ser humano.</p>
+    </header>
+
+    <nav>
+      <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul id="nav-links">
+        <li><a href="#droides">Droides</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <p>Ofrecemos venta, modificación y mantenimiento de droides de todas las clases, con interfaz holográfica integrada y opciones de combate o exploración.</p>
+    </section>
+
+    <section id="droides">
+      <h2>Nuestros Droides</h2>
+
+      <div class="carousel-container">
+        <button id="prev">&#10094;</button>
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-item">
+        <!-- Aquí va tu imagen -->
+            <img src="protocol_droid.jpg" alt="Droide de Protocolo">
+          </div>
+          <div class="carousel-item">
+        <!-- Aquí va tu imagen -->
+            <img src="r2d2.png" alt="Droide Astromecanico">
+          </div>
+          <div class="carousel-item">
+        <!-- Aquí va tu imagen -->
+            <img src="battle_droid.png" alt="Droide de Batalla">
+          </div>
+        </div>
+        <button id="next">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="personaliza">
+      <h2>Personalización Interactiva</h2>
+      <p>Próximamente disponible: un configurador 3D para elegir el color, accesorios y módulo de tu droide ideal.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Ubicación</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7420.474146514627!2d-0.3585141235893342!3d39.45804011342916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048c3ee71cb3b%3A0x21a145b7e0c8adb6!2sPalacio%20de%20Las%20Artes%20Reina%20Sof%C3%ADa!5e1!3m2!1ses-419!2sgt!4v1753412590211!5m2!1ses-419!2sgt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form id="contact-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+
+
+    <footer>
+      <p>&copy; 2025 AstroDroid. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="intro.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
